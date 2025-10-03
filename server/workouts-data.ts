@@ -169,8 +169,9 @@ export const workoutTemplates: WorkoutTemplate[] = [
         title: "Warm-up",
         duration: "10m",
         exercises: [
-          { name: "2 laps jog around pitch", notes: "~400–600 m" },
+          { name: "2 laps jog around pitch" },
           { name: "Dynamic stretching" },
+          { name: "Light dribbling & passing" },
         ]
       },
       {
@@ -187,7 +188,7 @@ export const workoutTemplates: WorkoutTemplate[] = [
         exercises: [
           { name: "Ball mastery", notes: "5m alternating (toe taps, V-pulls, rolls)" },
           { name: "Passing accuracy (wall)", reps: "3×25 L | 2×25 R", rest: "45–60s" },
-          { name: "Dribble + finish", sets: "2", reps: "8 L | 8 R", rest: "45–60s" },
+          { name: "Dribble + finish", reps: "2×8 L | 2×8 R", rest: "45–60s" },
           { name: "Shooting placement", notes: "10 far + 10 near L | 10 far + 10 near R" },
         ]
       },
@@ -200,10 +201,10 @@ export const workoutTemplates: WorkoutTemplate[] = [
       },
       {
         title: "Cooldown",
-        duration: "10m",
+        duration: "5m",
         exercises: [
-          { name: "1 lap walk/jog" },
-          { name: "Static stretches", notes: "5–6 min (hold 20–30 s each). Examples: Hamstring stretch, Quad stretch, Calf stretch, Hip flexor lunge stretch, Groin/adductor stretch" },
+          { name: "1 lap walk/jog", notes: "~200–300 m" },
+          { name: "Static stretches", notes: "hold 20–30 s each" },
         ]
       },
     ]
@@ -500,7 +501,7 @@ export const workoutTemplates: WorkoutTemplate[] = [
   {
     dayOfWeek: "FRIDAY",
     mode: "solo",
-    title: "Mixed Touches + 1v1 Moves + Combo Play",
+    title: "Mixed Touches + 1v1 Skills + Combo Play",
     duration: "~1h40min",
     location: "Pitch",
     equipment: "Ball, cones, wall",
@@ -509,13 +510,9 @@ export const workoutTemplates: WorkoutTemplate[] = [
         title: "Warm-up",
         duration: "10m",
         exercises: [
-          { name: "2 laps jog around pitch", notes: "~400–600 m, 3–4 min" },
-          { name: "Leg swings (front/back)", reps: "10/leg" },
-          { name: "Leg swings (side/side)", reps: "10/leg" },
-          { name: "Walking lunges with twist", reps: "8/leg" },
-          { name: "High knees", notes: "20 m" },
-          { name: "Butt kicks", notes: "20 m" },
-          { name: "Light ball touches", notes: "2–3 min. Gentle dribbling, 20–30 short passes at 50% intensity" },
+          { name: "2 laps jog around pitch" },
+          { name: "Dynamic stretching" },
+          { name: "Light dribbling & passing" },
         ]
       },
       {
@@ -540,7 +537,7 @@ export const workoutTemplates: WorkoutTemplate[] = [
         title: "Combination Play",
         duration: "30m",
         exercises: [
-          { name: "Wall give-and-go → finish", reps: "3×8 L | 2×8 R", rest: "60s" },
+          { name: "Give-and-go → finish", reps: "3×8 L | 2×8 R", rest: "60s" },
           { name: "Layoff + 1st-time shot", reps: "3×8 L | 2×8 R", rest: "60s" },
           { name: "Long pass → control → return", reps: "8 L | 8 R" },
         ]
@@ -554,10 +551,10 @@ export const workoutTemplates: WorkoutTemplate[] = [
       },
       {
         title: "Cooldown",
-        duration: "10m",
+        duration: "5m",
         exercises: [
-          { name: "1 lap walk/jog" },
-          { name: "Static stretches", notes: "5–6 min (hold 20–30 s each). Examples: Hamstring stretch, Quad stretch, Calf stretch, Hip flexor lunge stretch, Groin/adductor stretch" },
+          { name: "1 lap walk/jog", notes: "~200–300 m" },
+          { name: "Static stretches", notes: "hold 20–30 s each" },
         ]
       },
     ]
@@ -650,13 +647,9 @@ export const workoutTemplates: WorkoutTemplate[] = [
         title: "Warm-up",
         duration: "10m",
         exercises: [
-          { name: "2 laps jog around pitch", notes: "~400–600 m, 3–4 min" },
-          { name: "Leg swings (front/back)", reps: "10/leg" },
-          { name: "Leg swings (side/side)", reps: "10/leg" },
-          { name: "Walking lunges with twist", reps: "8/leg" },
-          { name: "High knees", notes: "20 m" },
-          { name: "Butt kicks", notes: "20 m" },
-          { name: "Light ball touches", notes: "2–3 min. Gentle dribbling, 20–30 short passes at 50% intensity" },
+          { name: "2 laps jog around pitch" },
+          { name: "Dynamic stretching" },
+          { name: "Light dribbling & passing" },
         ]
       },
       {
@@ -679,8 +672,8 @@ export const workoutTemplates: WorkoutTemplate[] = [
         title: "Ball Mastery",
         duration: "20m",
         exercises: [
-          { name: "Toe taps", sets: "3", reps: "45s alternating", rest: "45s" },
-          { name: "Sole rolls", sets: "3", reps: "45s alternating", rest: "45s" },
+          { name: "Toe taps", reps: "3×45s alternating", rest: "45s" },
+          { name: "Sole rolls", reps: "3×45s alternating", rest: "45s" },
           { name: "Inside-outside touches", reps: "3×45s L | 2×45s R", rest: "45s" },
         ]
       },
@@ -703,10 +696,10 @@ export const workoutTemplates: WorkoutTemplate[] = [
       },
       {
         title: "Cooldown",
-        duration: "10m",
+        duration: "5m",
         exercises: [
-          { name: "1 lap walk/jog" },
-          { name: "Static stretches", notes: "5–6 min (hold 20–30 s each). Examples: Hamstring stretch, Quad stretch, Calf stretch, Hip flexor lunge stretch, Groin/adductor stretch" },
+          { name: "1 lap walk/jog", notes: "~200–300 m" },
+          { name: "Static stretches", notes: "hold 20–30 s each" },
         ]
       },
     ]
@@ -798,7 +791,7 @@ export const workoutTemplates: WorkoutTemplate[] = [
   {
     dayOfWeek: "SUNDAY",
     mode: "solo",
-    title: "Skill Moves & Ball Mastery + Upper Strength",
+    title: "Skill Moves & Ball Mastery + Upper strength",
     duration: "1h10m",
     location: "Parking field (skills) → Gym (upper body) → Home (mobility optional)",
     equipment: "Ball, mat, barbell/dumbbells, pull-up bar",
@@ -808,7 +801,7 @@ export const workoutTemplates: WorkoutTemplate[] = [
         duration: "15m",
         exercises: [
           { name: "Fake shot + ball roll", reps: "15 L | 15 R", rest: "45–60s" },
-          { name: "Body feint + croqueta", reps: "15 L | 15 R", rest: "45–60s" },
+          { name: "Body feint + La Croqueta", reps: "15 L | 15 R", rest: "45–60s" },
           { name: "Flip Flap", reps: "15 L | 15 R", rest: "45–60s" },
         ]
       },
