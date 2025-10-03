@@ -239,8 +239,47 @@ export async function initializeDatabase() {
       `);
       
       console.log("Basic database structure created");
+      
+      // Seed the database with initial data
+      console.log("Seeding database with initial data...");
+      const { seedExercises, seedWorkouts } = await import('./seed.js');
+      
+      // Create test user if doesn't exist
+      const testUserId = "test-user-id";
+      await db.execute(sql`
+        INSERT INTO users (id, username, password) 
+        VALUES ('test-user-id', 'test-user', 'password')
+        ON CONFLICT (username) DO NOTHING
+      `);
+      
+      await seedExercises();
+      await seedWorkouts(testUserId);
+      console.log("Database seeded successfully!");
     } else {
       console.log("Tables already exist");
+      
+      // Check if workouts exist, if not, seed them
+      const workoutCheck = await db.execute(sql`SELECT COUNT(*) as count FROM workouts`);
+      const workoutCount = parseInt(String(workoutCheck.rows[0]?.count || '0'));
+      
+      if (workoutCount === 0) {
+        console.log("No workouts found. Seeding database...");
+        const { seedExercises, seedWorkouts } = await import('./seed.js');
+        
+        // Create test user if doesn't exist
+        const testUserId = "test-user-id";
+        await db.execute(sql`
+          INSERT INTO users (id, username, password) 
+          VALUES ('test-user-id', 'test-user', 'password')
+          ON CONFLICT (username) DO NOTHING
+        `);
+        
+        await seedExercises();
+        await seedWorkouts(testUserId);
+        console.log("Database seeded successfully!");
+      } else {
+        console.log(`Found ${workoutCount} existing workouts`);
+      }
     }
 
     await pool.end();
